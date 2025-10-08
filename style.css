@@ -1,0 +1,18 @@
+:root {
+    --white: #FFFFFF;
+    --generate-background: #10B981;
+
+    --dm-background-color: #1F2937;
+    --dm-text-color: #D5D4D8;
+    --dm-subtext-color: #D5D4D8;
+    --dm-button-background: #273549;
+    --dm-button-text: #55F991;
+
+    --lm-background-color: #ECFDF5;
+    --lm-text-color: #111827;
+    --lm-subtext-color: #6B7280;
+    --lm-button-background: #273549;
+    --lm-button-text: #5DEF92;
+
+}
+
