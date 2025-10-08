@@ -15,12 +15,18 @@
     --lm-button-text: #5DEF92;
 }
 
-.header {
+body {
+    background-color: var(--dm-background-color);
+}
+
+.header-text {
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
+
+    color: var(--white);
 }
 
 .header-subtext {
@@ -29,15 +35,65 @@
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+
+    color: var(--dm-subtext-color);
 }
 
-.btn-text {
+.green-highlight {
+    color: var(--dm-button-text);
+}
+
+.generate-btn {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
+
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--generate-background);
+    color: var(--white);
 }
+
+.horizontal-line {
+    max-width: 450px;
+    height: 1px;
+    border: none;
+    background-color: #2F3E53;
+    margin: 40px auto;
+}
+
+.generated-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.generated-pwd {
+    display: flex;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    font-size: 16px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 210px;
+    height: 40px;
+    background-color: var(--dm-button-background);
+    border-radius: 6px;
+
+    color: var(--dm-button-text);
+
+}
+
+
 
 
 
