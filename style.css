@@ -34,7 +34,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 40px;
+    font-size: 2.5rem;
 
     line-height: 40px;
 
@@ -49,16 +49,25 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
 
     margin-bottom: 50px;
-
-
     color: var(--dm-subtext-color);
 }
 
 .green-highlight {
     color: var(--dm-button-text);
+    transition: text-shadow 0.5s linear;
+    cursor: default;
+}
+
+.green-highlight:hover {
+    text-shadow: 0 0 20px var(--dm-button-text);
+}
+
+.header-btns {
+    display: flex;
+    gap: 20px;
 }
 
 .generate-btn {
@@ -66,7 +75,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
 
     width: 200px;
     height: 40px;
@@ -74,6 +83,35 @@ body {
     border-radius: 6px;
     background-color: var(--generate-background);
     color: var(--white);
+
+    transition: box-shadow 0.5s linear;
+}
+
+.generate-btn:hover {
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.options-btn {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--generate-background);
+    color: var(--white);
+
+    transition: box-shadow 0.5s linear;
+}
+
+.options-btn:hover {
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
 }
 
 .horizontal-line {
@@ -97,7 +135,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500px;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
 
     align-items: center;
     justify-content: center;

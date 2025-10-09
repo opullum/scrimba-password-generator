@@ -15,8 +15,28 @@
         <h1 class="header-text">Generate a <span class="green-highlight">random password</span></h1>
         <h2 class="header-subtext">Never use an insecure password again.</h2>
         </div>
+        <div class="header-btns">
+            <button class="generate-btn"">Generate Passwords</button>
+            <button class="options-btn">Options</button>
+        </div>
 
-        <button class="generate-btn"">Generate Passwords</button>
+        <div class="options-panel">
+            <input type="range" min="8" max="16" name="pwd-length" class="pwd-length">
+            <label for="pwd-length">Password Length</label>
+
+            <input type="checkbox" name="numbers-toggle">
+            <label for="numbers-toggle">Numbers</label>
+
+            <input type="checkbox" name="special-toggle">
+            <label for="special-toggle">Special Characters</label>
+
+            <input type="checkbox" class="uppercase-toggle">
+            <label for="uppercase-toggle">A-Z</label>
+
+            <input type="checkbox" name="lowercase-toggle">
+            <label for="lowercase-toggle">a-z</label>
+
+        </div>
         <hr class="horizontal-line">
         <div class="generated-btns">
             <div class="generated-pwd">Example Text</div>
