@@ -2,6 +2,8 @@
     --white: #ebebeb;
     --generate-background: #10B981;
 
+    --slider-background: #ffffff;
+
     --dm-background-color: #1F2937;
     --dm-text-color: #D5D4D8;
     --dm-subtext-color: #D5D4D8;
@@ -23,6 +25,47 @@ body {
 }
 
 /* Styling Custom Range Label */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 15px;
+    background-color: var(--slider-background);
+}
+
+input[type="range"]::-moz-range-track{
+    height: 15px;
+    background-color: var(--slider-background);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    background-color: var(--generate-background)
+
+
+}
+
+input[type="range"]::-moz-range-thumb {
+
+}
+
+
+
+
+
+/* Class Selectors */
 
 .window {
     display: block;
