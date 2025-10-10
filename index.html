@@ -21,20 +21,23 @@
         </div>
 
         <div class="options-panel">
-            <input type="range" min="8" max="16" name="pwd-length" class="pwd-length">
+            <div class="pwd-slider">
+                <input type="range" name="pwd-length" min="15" max="25">
+                <span class="pwd-length-val">15</span>
+            </div>
             <label for="pwd-length">Password Length</label>
+            <p class="options-hint">Minimum password length is 15 characters A maximum length of 25 characters is supported.</p> 
+            <div class="options-panel-btns">
+                <input type="checkbox" name="upper-toggle" id="">
+                <label for="upper-toggle">A-Z</label>
+                <input type="checkbox" name="lower-toggle" id="">
+                <label for="lower-toggle">a-z</label>
+                <input type="checkbox" name="numbers-toggle" id="">
+                <label for="numbers-toggle">0-9</label>
+                <input type="checkbox" name="symbols-toggle" id="">
+                <label for="symbols-toggle">!#$@&*</label>
+            </div>
 
-            <input type="checkbox" name="numbers-toggle">
-            <label for="numbers-toggle">Numbers</label>
-
-            <input type="checkbox" name="special-toggle">
-            <label for="special-toggle">Special Characters</label>
-
-            <input type="checkbox" class="uppercase-toggle">
-            <label for="uppercase-toggle">A-Z</label>
-
-            <input type="checkbox" name="lowercase-toggle">
-            <label for="lowercase-toggle">a-z</label>
 
         </div>
         <hr class="horizontal-line">

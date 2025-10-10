@@ -1,5 +1,5 @@
 :root {
-    --white: #FFFFFF;
+    --white: #ebebeb;
     --generate-background: #10B981;
 
     --dm-background-color: #1F2937;
@@ -21,6 +21,8 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+/* Styling Custom Range Label */
 
 .window {
     display: block;
@@ -113,6 +115,27 @@ body {
     box-shadow: 0 0 10px black;
     cursor: pointer;
 }
+
+.options-panel {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--generate-background);
+    border-radius: 6px;
+
+    padding: 10px;
+    margin-top: 20px;
+}
+
 
 .horizontal-line {
     max-width: 100%;
